@@ -1,0 +1,178 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px !important;
+	color: #053b6d;
+	background: #fff;
+}
+
+p {
+	font-size: 16px !important;
+}
+
+.opac {
+	opacity: .65;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.navbar {
+	padding: 2rem 0;
+}
+
+.form-group-mod {
+	position: relative;
+	width: 80%;
+}
+
+.form-mod {
+	border: transparent;
+	border-radius: 100px;
+	padding: 1.35rem 1.25rem;
+	color: #007bff !important;
+}
+
+.form-mod::placeholder {
+	color: #007bff !important;
+	opacity: .65;
+}
+
+.p-absolute {
+	position: absolute;
+	top: .25rem;
+	right: .25rem;
+	bottom: .25rem;
+}
+
+.btn-mod {
+	border-radius: 100px;
+	font-size: 14px !important;
+	padding: .5rem 1.25rem !important;
+	display: block;
+	box-shadow: 0 3px 15px -7px #333;
+}
+
+.nav-link {
+	color: #fff !important;
+	letter-spacing: 3px;
+	margin: 0 .5rem;	
+}
+
+.banner-1 {
+	background: transparent;
+	min-height: 600px;
+	position: relative;
+	overflow: hidden;
+	background: url('../file/hostup-opac.png');
+	background-repeat: no-repeat;
+	background-position: bottom -50px left -400px;
+	background-size: 100%;
+}
+
+.banner-1:before {
+	content: '';
+	background: #007bff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 0 0 200px 0;
+	transform: rotate(-7deg) scale(1.3) translate(-9%, -29%);
+	z-index: -1;
+}
+
+.header {
+	transform: translateY(23vh);
+}
+
+.image {
+	animation: 5s animate infinite;
+	transition: 1s;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-50px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+
+
+}
+
+.banner-3 {
+	padding: 10rem 0 5rem;
+}
+
+.why-card {
+	border-radius: 10px;
+	box-shadow: 0 7px 35px -20px rgba(0,0,0,.25);
+}
+
+.banner-4 {
+	background: #f7fafc;
+	padding: 5rem 0;
+}
+
+.package-card-1, .package-card-2, .package-card-3 {
+	border-radius: 10px;
+	box-shadow: 0 7px 35px -20px rgba(0,0,0,.25);
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+.package-card-1 .head h5, .head h3, .package-card-2 .head h5, .head h3, .package-card-3 .head h5, .head h3 {
+	z-index: 1;
+	position:relative
+}
+
+.package-card-1 .head:before {
+	content: '';
+	background: #007bff;
+	position: absolute;
+	top: 150px;
+	left: 75px;
+	right: 75px;
+	height: 200px;
+	width: 200px;
+	transform: scale(2) translateY(-140px);
+	border-radius: 100%;
+	z-index: 0;
+}
+
+.package-card-2 .head:before {
+	content: '';
+	background: #2fcc71;
+	position: absolute;
+	top: 150px;
+	left: 75px;
+	right: 75px;
+	height: 200px;
+	width: 200px;
+	transform: scale(2) translateY(-140px);
+	border-radius: 100%;
+	z-index: 0;
+}
+
+.package-card-3 .head:before {
+	content: '';
+	background: #ffa028;
+	position: absolute;
+	top: 150px;
+	left: 75px;
+	right: 75px;
+	height: 200px;
+	width: 200px;
+	transform: scale(2) translateY(-140px);
+	border-radius: 100%;
+	z-index: 0;
+}
